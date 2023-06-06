@@ -27,12 +27,14 @@ def osTerminate():
   print("Total number of instances:", len(allOs))
 
 def endAllInstances():
+    print("Terminating All instances as the program is closed!!!")
     while True:
         if allOs == []:
             break
         osDelete = allOs.pop()
         print(osDelete)
         ec2.instances.filter(InstanceIds=[osDelete]).terminate()
+
 
 detector = HandDetector(maxHands=1)
 while True:
