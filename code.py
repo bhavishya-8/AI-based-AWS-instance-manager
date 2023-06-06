@@ -48,7 +48,7 @@ while True:
     if noOfFingers == [0,1,0,0,0]:
       print("Index Finger")
       myOSLaunch()
-    if noOfFingers == [1,0,0,0,0]:
+    if noOfFingers == [1,0,0,0,0] and allOs != []:
       print("Thumb")
       osTerminate()
 endAllInstances()
